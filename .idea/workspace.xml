@@ -4,7 +4,8 @@
     <list default="true" id="576aed85-bf68-459b-879c-98a608f611ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicTacToeGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToeGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +70,19 @@
       <option name="presentableId" value="Default" />
       <updated>1585821684488</updated>
     </task>
+    <task id="LOCAL-00001" summary="Put some variables that were constants into a constants file">
+      <created>1585908796266</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585908796266</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Put some variables that were constants into a constants file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Put some variables that were constants into a constants file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="240" y="47" key="#Project_Structure" timestamp="1585821695448">

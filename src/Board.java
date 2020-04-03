@@ -128,7 +128,7 @@ public class Board {
             gameOver = true;
         }
         else if (!emptySpaceCheck()){
-            winState = 'd';
+            winState = Constants.DRAW_SIGN;
             gameOver = true;
         }
     }

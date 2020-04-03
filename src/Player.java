@@ -5,10 +5,10 @@ public class Player {
     public Player(char playerNum){
         this.playerNum = playerNum;
         if (playerNum == '1') {
-            playerSign = 'X';
+            playerSign = Constants.PLAYER_ONE_SIGN;
         }
         else{
-            playerSign = 'O';
+            playerSign = Constants.PLAYER_TWO_SIGN;
         }
     }
 
