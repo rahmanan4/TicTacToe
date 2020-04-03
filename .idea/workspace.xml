@@ -30,6 +30,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="129" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -79,10 +80,10 @@
       <screen x="0" y="23" width="1280" height="717" />
     </state>
     <state x="453" y="98" key="#com.intellij.ide.util.MemberChooser/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1585896153120" />
-    <state x="273" y="23" key="CommitChangelistDialog2" timestamp="1585908781459">
+    <state x="273" y="23" key="CommitChangelistDialog2" timestamp="1585908795945">
       <screen x="0" y="23" width="1280" height="717" />
     </state>
-    <state x="273" y="23" key="CommitChangelistDialog2/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1585908781459" />
+    <state x="273" y="23" key="CommitChangelistDialog2/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1585908795945" />
     <state width="1238" height="177" key="GridCell.Tab.0.bottom" timestamp="1585908323200">
       <screen x="0" y="23" width="1280" height="717" />
     </state>
