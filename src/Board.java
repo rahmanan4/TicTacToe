@@ -1,7 +1,5 @@
 public class Board {
-    public final static int ROW_DIMENSION = Constants.ROW_DIMENSION;
-    public final static int COL_DIMENSION = Constants.COL_DIMENSION;
-    private char[][] board = new char[ROW_DIMENSION][COL_DIMENSION];
+    private char[][] board = new char[Constants.ROW_DIMENSION][Constants.COL_DIMENSION];
     private int currMove = 1;
     private boolean gameOver = false;
     private char winState;
@@ -11,15 +9,15 @@ public class Board {
     }
 
     private void makeBoard(){
-        for (int i = 0; i < ROW_DIMENSION; i++){
-            for (int j = 0; j < COL_DIMENSION; j++){
+        for (int i = 0; i < Constants.ROW_DIMENSION; i++){
+            for (int j = 0; j < Constants.COL_DIMENSION; j++){
                 board[i][j] = '_';
             }
         }
     }
 
     private boolean checkBounds(int row, int col){
-        return row >= 0 && row < ROW_DIMENSION && col >= 0 && col < COL_DIMENSION;
+        return row >= 0 && row < Constants.ROW_DIMENSION && col >= 0 && col < Constants.COL_DIMENSION;
     }
 
     public boolean move(char player, String m){
@@ -56,8 +54,8 @@ public class Board {
     }
 
     public boolean emptySpaceCheck(){
-        for (int i = 0; i < ROW_DIMENSION; i++){
-            for (int j = 0; j < COL_DIMENSION; j++){
+        for (int i = 0; i < Constants.ROW_DIMENSION; i++){
+            for (int j = 0; j < Constants.COL_DIMENSION; j++){
                 if (board[i][j] == '_'){
                     return true;
                 }
@@ -67,9 +65,9 @@ public class Board {
     }
 
     public boolean rowCheck(char sign){
-        for (int i = 0; i < ROW_DIMENSION; i++) {
+        for (int i = 0; i < Constants.ROW_DIMENSION; i++) {
             int signCounter = 0;
-            for (int j = 0; j < COL_DIMENSION; j++) {
+            for (int j = 0; j < Constants.COL_DIMENSION; j++) {
                 if (board[i][j] != '_' && board[i][j] == sign) {
                     signCounter++;
                 }
@@ -82,9 +80,9 @@ public class Board {
     }
 
     public boolean colCheck(char sign){
-        for (int j = 0; j < COL_DIMENSION; j++) {
+        for (int j = 0; j < Constants.COL_DIMENSION; j++) {
             int signCounter = 0;
-            for (int i = 0; i < ROW_DIMENSION; i++) {
+            for (int i = 0; i < Constants.ROW_DIMENSION; i++) {
                 if (board[i][j] != '_' && board[i][j] == sign) {
                     signCounter++;
                 }
@@ -100,7 +98,7 @@ public class Board {
         int signCounter = 0;
         int i = 0;
         int j = 0;
-        while (i < ROW_DIMENSION || j < COL_DIMENSION){
+        while (i < Constants.ROW_DIMENSION || j < Constants.COL_DIMENSION){
             if (board[i][j] == sign){
                 signCounter++;
             }
@@ -114,7 +112,7 @@ public class Board {
         signCounter = 0;
         i = 0;
         j = 2;
-        while (i < ROW_DIMENSION || j > -1){
+        while (i < Constants.ROW_DIMENSION || j > -1){
             if (board[i][j] == sign){
                 signCounter++;
             }
@@ -140,8 +138,8 @@ public class Board {
     }
 
     public void printBoard(){
-        for(int i = 0; i < ROW_DIMENSION; i++){
-            for (int j = 0; j < COL_DIMENSION; j++){
+        for(int i = 0; i < Constants.ROW_DIMENSION; i++){
+            for (int j = 0; j < Constants.COL_DIMENSION; j++){
                 System.out.print(board[i][j] + " ");
             }
             System.out.println();

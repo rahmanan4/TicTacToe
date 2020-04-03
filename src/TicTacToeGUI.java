@@ -12,10 +12,6 @@ public class TicTacToeGUI {
     // create a board panel which is a class defined below
     private final BoardPanel boardPanel;
 
-    private final static Dimension OUTER_FRAME_DIMENSION = new Dimension(600,600);
-    private final static Dimension BOARD_PANEL_DIMENSION = new Dimension(100, 100);
-    private final static Dimension TILE_PANEL_DIMENSION = new Dimension(10, 10);
-
     public TicTacToeGUI() {
         // actually instantiate a JFrame to the JFrame being held in the TicTacToeGUI class
         this.gameFrame = new JFrame("Tic Tac Toe");
@@ -24,7 +20,7 @@ public class TicTacToeGUI {
         // adds the menu bar to the game window
         this.gameFrame.setJMenuBar(createMenuBar());
         // make the window dimensions the size of OUTER_FRAME_DIMENSION
-        this.gameFrame.setSize(OUTER_FRAME_DIMENSION);
+        this.gameFrame.setSize(Constants.OUTER_FRAME_DIMENSION);
 
         this.boardPanel = new BoardPanel();
         // Throws the board panel in the center of the window
@@ -61,7 +57,7 @@ public class TicTacToeGUI {
         final List<TilePanel> boardTiles;
 
         BoardPanel(){
-            super(new GridLayout(Board.ROW_DIMENSION,3));
+            super(new GridLayout(Constants.ROW_DIMENSION,3));
             // stores boardTiles in ArrayList
             this.boardTiles = new ArrayList<>();
             // Tic Tac Toe will have 9 tiles, so create 9 TilePanels
@@ -72,7 +68,7 @@ public class TicTacToeGUI {
                 add(tilePanel);
             }
             // set the dimensions of the board, where board dimensions is less than or equal to outer frame
-            setPreferredSize(BOARD_PANEL_DIMENSION);
+            setPreferredSize(Constants.BOARD_PANEL_DIMENSION);
             validate();
         }
     }
@@ -84,7 +80,7 @@ public class TicTacToeGUI {
         TilePanel(final BoardPanel boardPanel, final int tileId){
             super(new GridBagLayout());
             this.tileId = tileId;
-            setPreferredSize(TILE_PANEL_DIMENSION);
+            setPreferredSize(Constants.TILE_PANEL_DIMENSION);
             assignTileColor();
             validate();
         }
