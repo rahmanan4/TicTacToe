@@ -14,7 +14,7 @@ public class TicTacToeGUI {
 
     public TicTacToeGUI() {
         // actually instantiate a JFrame to the JFrame being held in the TicTacToeGUI class
-        this.gameFrame = new JFrame("Tic Tac Toe");
+        this.gameFrame = new JFrame(Constants.TITLE);
         // adds a border layout where you can then throw various things at various locations of the board.
         this.gameFrame.setLayout(new BorderLayout());
         // adds the menu bar to the game window
@@ -37,9 +37,9 @@ public class TicTacToeGUI {
 
     private JMenu createFileMenu(){
         // create file tab within menu bar
-        final JMenu fileMenu = new JMenu("File");
+        final JMenu fileMenu = new JMenu(Constants.JMENU_TAB1_NAME);
         // create exit option underneath file tab
-        final JMenuItem exit = new JMenuItem("Exit");
+        final JMenuItem exit = new JMenuItem(Constants.JMENU_TAB1_JMENU_ITEM1);
         // create action listener to perform some function aka close the program
         exit.addActionListener(new ActionListener() {
             @Override
@@ -57,7 +57,7 @@ public class TicTacToeGUI {
         final List<TilePanel> boardTiles;
 
         BoardPanel(){
-            super(new GridLayout(Constants.ROW_DIMENSION,3));
+            super(new GridLayout(Constants.ROW_DIMENSION,Constants.COL_DIMENSION));
             // stores boardTiles in ArrayList
             this.boardTiles = new ArrayList<>();
             // Tic Tac Toe will have 9 tiles, so create 9 TilePanels

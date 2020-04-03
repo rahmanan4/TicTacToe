@@ -4,7 +4,7 @@ public class Player {
 
     public Player(char playerNum){
         this.playerNum = playerNum;
-        if (playerNum == '1') {
+        if (playerNum == Constants.PLAYER_ONE_NUM) {
             playerSign = Constants.PLAYER_ONE_SIGN;
         }
         else{

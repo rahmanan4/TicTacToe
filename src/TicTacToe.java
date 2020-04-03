@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 public class TicTacToe {
     public static void main(String[] args){
-        TicTacToeGUI t = new TicTacToeGUI();
-        Player p1 = new Player('1');
-        Player p2 = new Player('2');
+        //TicTacToeGUI t = new TicTacToeGUI();
+
+        Player p1 = new Player(Constants.PLAYER_ONE_NUM);
+        Player p2 = new Player(Constants.PLAYER_TWO_NUM);
         Board b = new Board();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to Tic Tac Toe!");
