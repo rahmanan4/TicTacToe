@@ -14,7 +14,10 @@ public class Constants {
     public final static String TITLE = "Tic Tac Toe";
     public final static String JMENU_TAB1_NAME = "File";
     public final static String JMENU_TAB1_JMENU_ITEM1 = "Exit";
-    public final static Dimension OUTER_FRAME_DIMENSION = new Dimension(600,600);
+    public final static int NUM_TILES = 9;
+    public final static Dimension OUTER_FRAME_DIMENSION = new Dimension(400,400);
     public final static Dimension BOARD_PANEL_DIMENSION = new Dimension(100, 100);
     public final static Dimension TILE_PANEL_DIMENSION = new Dimension(10, 10);
+    public final static int ICON_WIDTH = 100;
+    public final static int ICON_HEIGHT = 100;
 }

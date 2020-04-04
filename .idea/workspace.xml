@@ -3,10 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="576aed85-bf68-459b-879c-98a608f611ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$BoardPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$BoardPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$TilePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$TilePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicTacToeGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToeGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToeGUI.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +43,15 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.TicTacToe">
-    <configuration name="TicTacToe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TicTacToe" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TicTacToeGUIDriver">
+    <configuration name="TicTacToeConsole" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TicTacToeConsole" />
       <module name="TicTacToe" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -53,9 +64,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TicTacToeGUIDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TicTacToeGUIDriver" />
+      <module name="TicTacToe" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicTacToeGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TicTacToeGame" />
+      <module name="TicTacToe" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TicTacToe" />
+        <item itemvalue="Application.TicTacToeGUIDriver" />
+        <item itemvalue="Application.TicTacToeConsole" />
+        <item itemvalue="Application.TicTacToeGame" />
         <item itemvalue="Application.TicTacToeGUI" />
       </list>
     </recent_temporary>
@@ -98,26 +125,39 @@
       <screen x="0" y="23" width="1280" height="717" />
     </state>
     <state x="273" y="23" key="CommitChangelistDialog2/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1585908795945" />
-    <state width="1238" height="177" key="GridCell.Tab.0.bottom" timestamp="1585910762086">
-      <screen x="0" y="23" width="1280" height="717" />
+    <state width="1878" height="177" key="GridCell.Tab.0.bottom" timestamp="1586019454690">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1238" height="177" key="GridCell.Tab.0.bottom/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1585910762086" />
-    <state width="1238" height="177" key="GridCell.Tab.0.bottom/0.23.1280.717@0.23.1280.717" timestamp="1585837791269" />
-    <state width="1238" height="177" key="GridCell.Tab.0.center" timestamp="1585910762084">
-      <screen x="0" y="23" width="1280" height="717" />
+    <state width="1878" height="177" key="GridCell.Tab.0.bottom/0.23.1280.717/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586019229478" />
+    <state width="1238" height="177" key="GridCell.Tab.0.bottom/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1586018717120" />
+    <state width="1238" height="177" key="GridCell.Tab.0.bottom/0.23.1280.717@0.23.1280.717" timestamp="1585934279565" />
+    <state width="1878" height="177" key="GridCell.Tab.0.bottom/0.23.1280.722/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586019454690" />
+    <state width="1878" height="177" key="GridCell.Tab.0.center" timestamp="1586019454689">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1238" height="177" key="GridCell.Tab.0.center/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1585910762084" />
-    <state width="1238" height="177" key="GridCell.Tab.0.center/0.23.1280.717@0.23.1280.717" timestamp="1585837791269" />
-    <state width="1238" height="177" key="GridCell.Tab.0.left" timestamp="1585910762083">
-      <screen x="0" y="23" width="1280" height="717" />
+    <state width="1878" height="177" key="GridCell.Tab.0.center/0.23.1280.717/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586019229477" />
+    <state width="1238" height="177" key="GridCell.Tab.0.center/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1586018717119" />
+    <state width="1238" height="177" key="GridCell.Tab.0.center/0.23.1280.717@0.23.1280.717" timestamp="1585934279564" />
+    <state width="1878" height="177" key="GridCell.Tab.0.center/0.23.1280.722/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586019454689" />
+    <state width="1878" height="177" key="GridCell.Tab.0.left" timestamp="1586019454688">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1238" height="177" key="GridCell.Tab.0.left/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1585910762083" />
-    <state width="1238" height="177" key="GridCell.Tab.0.left/0.23.1280.717@0.23.1280.717" timestamp="1585837791268" />
-    <state width="1238" height="177" key="GridCell.Tab.0.right" timestamp="1585910762085">
-      <screen x="0" y="23" width="1280" height="717" />
+    <state width="1878" height="177" key="GridCell.Tab.0.left/0.23.1280.717/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586019229476" />
+    <state width="1238" height="177" key="GridCell.Tab.0.left/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1586018717118" />
+    <state width="1238" height="177" key="GridCell.Tab.0.left/0.23.1280.717@0.23.1280.717" timestamp="1585934279560" />
+    <state width="1878" height="177" key="GridCell.Tab.0.left/0.23.1280.722/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586019454688" />
+    <state width="1878" height="177" key="GridCell.Tab.0.right" timestamp="1586019454689">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1238" height="177" key="GridCell.Tab.0.right/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1585910762085" />
-    <state width="1238" height="177" key="GridCell.Tab.0.right/0.23.1280.717@0.23.1280.717" timestamp="1585837791269" />
+    <state width="1878" height="177" key="GridCell.Tab.0.right/0.23.1280.717/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586019229477" />
+    <state width="1238" height="177" key="GridCell.Tab.0.right/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1586018717120" />
+    <state width="1238" height="177" key="GridCell.Tab.0.right/0.23.1280.717@0.23.1280.717" timestamp="1585934279564" />
+    <state width="1878" height="177" key="GridCell.Tab.0.right/0.23.1280.722/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586019454689" />
+    <state x="-1189" y="267" width="1080" height="517" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586019364941">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-1189" y="267" width="1080" height="517" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1280.717/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586019226013" />
+    <state x="-1189" y="267" width="1080" height="517" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1280.722/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586019364941" />
     <state x="429" y="305" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585908735268">
       <screen x="0" y="23" width="1280" height="717" />
     </state>
