@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="576aed85-bf68-459b-879c-98a608f611ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$BoardPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$BoardPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$TilePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$TilePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicTacToe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicTacToeGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToeConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToeConsole.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
