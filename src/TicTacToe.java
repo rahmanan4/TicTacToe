@@ -2,8 +2,6 @@ import java.util.Scanner;
 
 public class TicTacToe {
     public static void main(String[] args){
-        //TicTacToeGUI t = new TicTacToeGUI();
-
         Player p1 = new Player(Constants.PLAYER_ONE_NUM);
         Player p2 = new Player(Constants.PLAYER_TWO_NUM);
         Board b = new Board();
