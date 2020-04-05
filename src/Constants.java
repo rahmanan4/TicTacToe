@@ -21,4 +21,6 @@ public class Constants {
     public final static Dimension TILE_PANEL_DIMENSION = new Dimension(10, 10);
     public final static int ICON_WIDTH = 100;
     public final static int ICON_HEIGHT = 100;
+    public final static String X_ICON_FILE_PATH = "/Users/adilrahman/IdeaProjects/TicTacToe/X.png";
+    public final static String O_ICON_FILE_PATH = "/Users/adilrahman/IdeaProjects/TicTacToe/O.png";
 }

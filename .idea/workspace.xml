@@ -3,12 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="576aed85-bf68-459b-879c-98a608f611ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeConsole.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeConsoleDriver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$BoardPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$BoardPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$TilePanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$TilePanel$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$TilePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI$TilePanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUIDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/TicTacToeGUIDriver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicTacToeGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToeGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToeConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToeConsoleDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToeGUIDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToeGUIDriver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +53,8 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.TicTacToeGUIDriver">
-    <configuration name="TicTacToeConsole" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TicTacToeConsole" />
+    <configuration name="TicTacToeConsoleDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TicTacToeConsoleDriver" />
       <module name="TicTacToe" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -78,7 +84,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TicTacToeGUIDriver" />
-        <item itemvalue="Application.TicTacToeConsole" />
+        <item itemvalue="Application.TicTacToeConsoleDriver" />
         <item itemvalue="Application.TicTacToeGame" />
         <item itemvalue="Application.TicTacToeGUI" />
       </list>
@@ -122,32 +128,32 @@
       <screen x="0" y="23" width="1280" height="717" />
     </state>
     <state x="273" y="23" key="CommitChangelistDialog2/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1585908795945" />
-    <state width="1238" height="122" key="GridCell.Tab.0.bottom" timestamp="1586072336954">
+    <state width="1238" height="178" key="GridCell.Tab.0.bottom" timestamp="1586081577555">
       <screen x="0" y="23" width="1280" height="717" />
     </state>
-    <state width="1878" height="177" key="GridCell.Tab.0.bottom/0.23.1280.717/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586020252389" />
-    <state width="1238" height="122" key="GridCell.Tab.0.bottom/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1586072336954" />
+    <state width="1878" height="261" key="GridCell.Tab.0.bottom/0.23.1280.717/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586076609226" />
+    <state width="1238" height="178" key="GridCell.Tab.0.bottom/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1586081577555" />
     <state width="1238" height="122" key="GridCell.Tab.0.bottom/0.23.1280.717@0.23.1280.717" timestamp="1586023099563" />
     <state width="1878" height="177" key="GridCell.Tab.0.bottom/0.23.1280.722/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586020131509" />
-    <state width="1238" height="122" key="GridCell.Tab.0.center" timestamp="1586072336951">
+    <state width="1238" height="178" key="GridCell.Tab.0.center" timestamp="1586081577554">
       <screen x="0" y="23" width="1280" height="717" />
     </state>
-    <state width="1878" height="177" key="GridCell.Tab.0.center/0.23.1280.717/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586020252388" />
-    <state width="1238" height="122" key="GridCell.Tab.0.center/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1586072336951" />
+    <state width="1878" height="261" key="GridCell.Tab.0.center/0.23.1280.717/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586076609225" />
+    <state width="1238" height="178" key="GridCell.Tab.0.center/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1586081577554" />
     <state width="1238" height="122" key="GridCell.Tab.0.center/0.23.1280.717@0.23.1280.717" timestamp="1586023099562" />
     <state width="1878" height="177" key="GridCell.Tab.0.center/0.23.1280.722/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586020131508" />
-    <state width="1238" height="122" key="GridCell.Tab.0.left" timestamp="1586072336950">
+    <state width="1238" height="178" key="GridCell.Tab.0.left" timestamp="1586081577553">
       <screen x="0" y="23" width="1280" height="717" />
     </state>
-    <state width="1878" height="177" key="GridCell.Tab.0.left/0.23.1280.717/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586020252387" />
-    <state width="1238" height="122" key="GridCell.Tab.0.left/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1586072336950" />
+    <state width="1878" height="261" key="GridCell.Tab.0.left/0.23.1280.717/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586076609224" />
+    <state width="1238" height="178" key="GridCell.Tab.0.left/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1586081577553" />
     <state width="1238" height="122" key="GridCell.Tab.0.left/0.23.1280.717@0.23.1280.717" timestamp="1586023099562" />
     <state width="1878" height="177" key="GridCell.Tab.0.left/0.23.1280.722/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586020131507" />
-    <state width="1238" height="122" key="GridCell.Tab.0.right" timestamp="1586072336953">
+    <state width="1238" height="178" key="GridCell.Tab.0.right" timestamp="1586081577555">
       <screen x="0" y="23" width="1280" height="717" />
     </state>
-    <state width="1878" height="177" key="GridCell.Tab.0.right/0.23.1280.717/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586020252388" />
-    <state width="1238" height="122" key="GridCell.Tab.0.right/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1586072336953" />
+    <state width="1878" height="261" key="GridCell.Tab.0.right/0.23.1280.717/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586076609225" />
+    <state width="1238" height="178" key="GridCell.Tab.0.right/0.23.1280.717/-1920.23.1920.1057@0.23.1280.717" timestamp="1586081577555" />
     <state width="1238" height="122" key="GridCell.Tab.0.right/0.23.1280.717@0.23.1280.717" timestamp="1586023099563" />
     <state width="1878" height="177" key="GridCell.Tab.0.right/0.23.1280.722/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1586020131508" />
     <state x="-1189" y="267" width="1080" height="517" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586019364941">

@@ -1,5 +1,5 @@
 public class TicTacToeGUIDriver {
     public static void main(String[] args){
-        TicTacToeGUI t = new TicTacToeGUI(new Board());
+        TicTacToeGUI t = new TicTacToeGUI();
     }
 }

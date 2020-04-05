@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TicTacToeConsole {
+public class TicTacToeConsoleDriver {
     public static void main(String[] args){
         Player p1 = new Player(Constants.PLAYER_ONE_NUM);
         Player p2 = new Player(Constants.PLAYER_TWO_NUM);
