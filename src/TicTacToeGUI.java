@@ -5,60 +5,39 @@ import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 import static java.util.Map.entry;
 
 
 public class TicTacToeGUI {
+
     private JFrame gameFrame;
     private BoardPanel boardPanel;
-    private JLabel playerTurn = new JLabel();
-    private JLabel gameStatus = new JLabel();
+    private JLabel turnStatus = new JLabel("", SwingConstants.CENTER);
+
     private Board ticTacToeBoard;
 
-    public TicTacToeGUI(Board b) {
-        this.ticTacToeBoard = b;
+    public TicTacToeGUI() {
+        this.ticTacToeBoard = new Board();
 
         this.gameFrame = new JFrame(Constants.TITLE);
-
         this.gameFrame.setLayout(new BorderLayout());
-
         this.gameFrame.setJMenuBar(createMenuBar());
-
         this.gameFrame.setSize(Constants.OUTER_FRAME_DIMENSION);
 
         this.boardPanel = new BoardPanel();
         this.gameFrame.add(this.boardPanel, BorderLayout.CENTER);
 
-        playerTurn.setText("Player " + ticTacToeBoard.getCurrMove() + "'s Move");
-        this.gameFrame.add(playerTurn, BorderLayout.NORTH);
-
-        gameStatus.setText("Is game over: " + ticTacToeBoard.isGameOver());
-        this.gameFrame.add(gameStatus, BorderLayout.SOUTH);
+        turnStatus.setText("Player " + ticTacToeBoard.getCurrMove() + "'s Move");
+        this.gameFrame.add(turnStatus, BorderLayout.NORTH);
 
         this.gameFrame.setVisible(true);
-
     }
 
     private JMenuBar createMenuBar(){
         final JMenuBar menuBar = new JMenuBar();
         menuBar.add(createFileMenu());
         return menuBar;
-    }
-
-    private void resetGameFrame(){
-        this.gameFrame.remove(boardPanel);
-
-        this.ticTacToeBoard = new Board();
-        this.boardPanel = new BoardPanel();
-        this.gameFrame.add(this.boardPanel, BorderLayout.CENTER);
-        playerTurn.setText("Player " + ticTacToeBoard.getCurrMove() + "'s Move");
-        this.gameFrame.add(playerTurn, BorderLayout.NORTH);
-        gameStatus.setText("Is game over: " + ticTacToeBoard.isGameOver());
-        this.gameFrame.add(gameStatus, BorderLayout.SOUTH);
-        this.gameFrame.setVisible(true);
     }
 
     private JMenu createFileMenu(){
@@ -85,26 +64,36 @@ public class TicTacToeGUI {
         return fileMenu;
     }
 
-    private class BoardPanel extends JPanel{
-        // store all TilePanels into a list of Tile Panels called boardTiles
-        final List<TilePanel> boardTiles;
+    private void resetGameFrame(){
+        this.gameFrame.remove(boardPanel);
 
+        this.ticTacToeBoard = new Board();
+        this.boardPanel = new BoardPanel();
+        this.gameFrame.add(this.boardPanel, BorderLayout.CENTER);
+
+        turnStatus.setText("Player " + ticTacToeBoard.getCurrMove() + "'s Move");
+        this.gameFrame.add(turnStatus, BorderLayout.NORTH);
+
+        this.gameFrame.setVisible(true);
+    }
+
+
+    private class BoardPanel extends JPanel{
         BoardPanel(){
             super(new GridLayout(Constants.ROW_DIMENSION, Constants.COL_DIMENSION));
-            // stores boardTiles in ArrayList
-            this.boardTiles = new ArrayList<>();
+
             // Tic Tac Toe will have 9 tiles, so create 9 TilePanels
             for(int i = 0; i < Constants.NUM_TILES; i++){
                 final TilePanel tilePanel = new TilePanel(this, i);
-                // first add the tilePanel to the ArrayList, then add it to the frame (window)
-                this.boardTiles.add(tilePanel);
                 add(tilePanel);
             }
+
             // set the dimensions of the board, where board dimensions is less than or equal to outer frame
             setPreferredSize(Constants.BOARD_PANEL_DIMENSION);
             validate();
         }
     }
+
 
     private class TilePanel extends JPanel{
         private final int tileId;
@@ -126,7 +115,8 @@ public class TicTacToeGUI {
             super(new GridBagLayout());
             this.tileId = tileId;
             setPreferredSize(Constants.TILE_PANEL_DIMENSION);
-            assignTileColor();
+            setBackground(Color.white);
+            setBorder(BorderFactory.createLineBorder(Color.black, 2, true));
             iconX = createTileIcon(Constants.PLAYER_ONE_SIGN);
             iconO = createTileIcon(Constants.PLAYER_TWO_SIGN);
 
@@ -141,7 +131,8 @@ public class TicTacToeGUI {
                             if (isValid) {
                                 assignTileIcon(iconX);
                             }
-                        } else {
+                        }
+                        else {
                             currMove = Constants.PLAYER_TWO_SIGN;
                             isValid = ticTacToeBoard.move(currMove, mapping.get(tileId));
                             if (isValid) {
@@ -151,12 +142,16 @@ public class TicTacToeGUI {
 
                         ticTacToeBoard.gameOver(currMove);
                         if (ticTacToeBoard.isGameOver()) {
-                            gameStatus.setText(ticTacToeBoard.getWinState() + " Wins!");
-                            //gameStatus.setText("Is game over? " + ticTacToeBoard.isGameOver());
-                            playerTurn.setText("No moves left.");
-
-                        } else {
-                            playerTurn.setText("Player " + ticTacToeBoard.getCurrMove() + "'s Move");
+                            char winState = ticTacToeBoard.getWinState();
+                            if (winState == Constants.DRAW_SIGN){
+                                turnStatus.setText("Draw!");
+                            }
+                            else {
+                                turnStatus.setText(ticTacToeBoard.getWinState() + " Wins!");
+                            }
+                        }
+                        else {
+                            turnStatus.setText("Player " + ticTacToeBoard.getCurrMove() + "'s Move");
                         }
                         validate();
                     }
@@ -165,21 +160,11 @@ public class TicTacToeGUI {
             validate();
         }
 
-        private void assignTileColor(){
-            if(tileId % 2 == 0){
-                setBackground(Color.lightGray);
-            }
-            else{
-                setBackground(Color.white);
-            }
-            setOpaque(true);
-        }
-
         private ImageIcon createTileIcon(char c){
             ImageIcon icon = null;
             if (c == Constants.PLAYER_ONE_SIGN) {
                 try {
-                    BufferedImage bImage = ImageIO.read(new File("/Users/adilrahman/IdeaProjects/TicTacToe/X.png"));
+                    BufferedImage bImage = ImageIO.read(new File(Constants.X_ICON_FILE_PATH));
                     icon = new ImageIcon(bImage);
                     Image image = icon.getImage();
                     Image newImg = image.getScaledInstance(Constants.ICON_WIDTH, Constants.ICON_HEIGHT, Image.SCALE_SMOOTH);
@@ -190,7 +175,7 @@ public class TicTacToeGUI {
             }
             else if (c == Constants.PLAYER_TWO_SIGN){
                 try {
-                    BufferedImage bImage = ImageIO.read(new File("/Users/adilrahman/IdeaProjects/TicTacToe/O.png"));
+                    BufferedImage bImage = ImageIO.read(new File(Constants.O_ICON_FILE_PATH));
                     icon = new ImageIcon(bImage);
                     Image image = icon.getImage();
                     Image newImg = image.getScaledInstance(Constants.ICON_WIDTH, Constants.ICON_HEIGHT, Image.SCALE_SMOOTH);
