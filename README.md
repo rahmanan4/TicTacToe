@@ -3,10 +3,10 @@
 Tic Tac Toe game for two players to play via Java Console or GUI using Java Swing and Java AWT. 
 
 If you wish to play through the Java console, then the following files should be used:
-    * Board.java
-    * Constants.java
-    * Player.java
-    TicTacToeConsoleDriver.java
+- Board.java
+- Constants.java
+- Player.java
+- TicTacToeConsoleDriver.java
     
 If you wish to play through the Java GUI, then the following files should be used:
     Board.java
